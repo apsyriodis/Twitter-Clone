@@ -22,7 +22,7 @@ pipeline {
         
           stage("push") {
             steps {
-                  sh "git push origin HEAD:master"
+                  sh "git push origin HEAD:production"
              }
         }
     }
