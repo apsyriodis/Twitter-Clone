@@ -8,6 +8,12 @@ pipeline {
              }
         }
         
+         stage("add") {
+            steps {
+                  sh "git add .'"
+             }
+        }
+        
          stage("commit") {
             steps {
                   sh "git commit -m 'Delete test.index file'"
