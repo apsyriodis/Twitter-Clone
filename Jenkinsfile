@@ -10,7 +10,7 @@ pipeline {
         
          stage("add") {
             steps {
-                  sh "git add .'"
+                  sh "git add ."
              }
         }
         
