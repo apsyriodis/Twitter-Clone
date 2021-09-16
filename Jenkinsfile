@@ -10,7 +10,7 @@ pipeline {
         
          stage("commit") {
             steps {
-                  sh "git commit -m "Deleted .env.example file"
+                  sh "git commit -m 'Deleted .env.example file'"
              }
         }
         
