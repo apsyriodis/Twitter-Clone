@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage("test") {
             steps {
-                  echo 'test'
+                  sh 'git rm .env.example'
+                  sh 'git commit -m "Deleted .env.example file'
+                  sh 'git push'
              }
         }
     }
