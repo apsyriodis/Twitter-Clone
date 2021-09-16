@@ -16,7 +16,7 @@ pipeline {
         
           stage("push") {
             steps {
-                  sh "git push"
+                  sh "git push -u origin production"
              }
         }
     }
