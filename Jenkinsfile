@@ -10,7 +10,7 @@ pipeline {
         
          stage("commit") {
             steps {
-                  sh "git commit -m 'Deleted test.index file'"
+                  sh "git commit -m 'Delete test.index file'"
              }
         }
         
