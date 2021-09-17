@@ -2,12 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage("init") {
-            steps {
-                  sh "git init"
-             }
-        }
-        
+       
         stage("config") {
             steps {
                   sh "git config --global init.defaultBranch production"
