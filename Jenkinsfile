@@ -10,7 +10,7 @@ pipeline {
         
         stage("config") {
             steps {
-                  sh "git config --global init.defaultBranch production"
+                  sh "git config --global init.defaultBranch master"
              }
         }
         
@@ -34,7 +34,7 @@ pipeline {
         
           stage("push") {
             steps {
-                  sh "git push -u origin production"
+                  sh "git push -u origin master"
              }
         }
     }
