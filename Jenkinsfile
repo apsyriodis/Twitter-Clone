@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage("migration") {
+        stage("test") {
             steps {
-                  sh 'php artisan migrate --force'
+                  sh 'php artisan make:test UserTest --unit'
              }
         }
     }
