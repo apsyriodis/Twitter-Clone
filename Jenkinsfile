@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage("migration") {
+        stage("migrate") {
             steps {
                   sh 'php artisan migrate --force'
              }
