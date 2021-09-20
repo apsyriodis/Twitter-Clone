@@ -5,6 +5,7 @@ pipeline {
         stage("test") {
             steps {
                   sh 'php artisan make:test UserTest --unit'
+                  sh './vendor/bin/phpunit'
              }
         }
     }
