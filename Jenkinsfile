@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage("test") {
+        stage("testing") {
             steps {
                   sh 'php artisan make:test UserTest --unit'
                   sh './vendor/bin/phpunit'
