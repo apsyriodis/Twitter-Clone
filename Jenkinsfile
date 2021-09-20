@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage("migration") {
             steps {
-                  sh 'php artisan migrate'
-                  sh 'yes'
+                  sh 'php artisan migrate --force'
              }
         }
     }
