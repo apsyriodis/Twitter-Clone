@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .phpunit.result.cache
+node_modules
