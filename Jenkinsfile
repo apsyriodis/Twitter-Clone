@@ -5,6 +5,7 @@ pipeline {
         stage("test") {
             steps {
                   sh 'vendor/bin/phpunit'
+                  echo 'test'
              }
         }
     }
