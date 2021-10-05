@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage("test") {
             steps {
-                  sh 'cd twitter-clone'
                   sh 'git pull'
                   sh 'docker login'
                   sh 'docker build -t apsyriodis/laravel:latest .'
