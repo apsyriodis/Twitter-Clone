@@ -11,6 +11,7 @@ pipeline {
                   sh 'cd ..'
                   sh 'cd kubernetes'
                   sh 'kubectl apply -f .'
+                  echo 'success'
              }
         }
     }
