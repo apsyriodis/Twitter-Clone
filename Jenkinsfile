@@ -4,13 +4,15 @@ pipeline {
     stages {
         stage("test") {
             steps {
-                  sh 'git pull'
+                //   sh 'git pull'
                 //   sh 'docker login'
-                //   sh 'docker build -t apsyriodis/laravel:latest .'
-                //   sh 'docker image push apsyriodis/laravel:latest'
+                  sh 'docker build -t apsyriodis/laravel:254f5fb4 .'
+                //   sh 'docker image push apsyriodis/laravel:254f5fb4'
                 //   sh 'cd ..'
                 //   sh 'cd kubernetes'
+                //'access and edit file'
                 //   sh 'kubectl apply -f .'
+                //   sh 'git push'
                 //   echo 'success'
              }
         }
