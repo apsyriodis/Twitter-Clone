@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("test") {
             steps {
-                  sh 'git pull'
+                //   sh 'git pull'
                   sh 'docker login'
                   sh 'docker build -t apsyriodis/laravel:latest .'
                   sh 'docker image push apsyriodis/laravel:latest'
