@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage("test") {
             steps {
-                  sh 'cd ~/twitter-clone'
+                  sh 'cd twitter-clone'
                   sh 'git pull'
                   sh 'docker login'
                   sh 'docker build -t apsyriodis/laravel:latest .'
                   sh 'docker image push apsyriodis/laravel:latest'
                   sh 'cd ..'
-                  sh 'cd ~/kubernetes'
+                  sh 'cd kubernetes'
                   sh 'kubectl apply -f .'
              }
         }
