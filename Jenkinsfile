@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage("init docker") {
-            steps {
-                sh "def dockerHome = tool 'docker'"
-                sh "env.PATH = "${dockerHome}/bin:${env.PATH}""
-            }
-        }
-
         stage("test") {
             steps {
                 //   sh 'git pull'
