@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage("test") {
             steps {
-                  echo 'test'
+                  sh 'cd ~/twitter-clone'
+                  sh 'git pull'
+                  sh 'cd ~/twitter-clone'
              }
         }
     }
